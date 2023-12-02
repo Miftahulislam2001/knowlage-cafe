@@ -1,0 +1,46 @@
+[
+    {
+        "id":"001",
+        "authorName":"Hider Hasan",
+        "authorImgUrl":"https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "blogTitle":"How To Learn Web Development for Beginners",
+        "coverImgUrl":"https://images.pexels.com/photos/5926393/pexels-photo-5926393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "readTime": 5,
+        "publishDate":"mar 20 (10 days ago)",
+        "tagOne":"#Beginners",
+        "tagTwo":"# web Development"
+    },
+    {
+        "id":"002",
+        "authorName":"Md.Hakim Bag",
+        "authorImgUrl":"https://c8.alamy.com/comp/MF3P30/portrait-of-smiling-web-designer-working-on-draft-at-desk-in-office-MF3P30.jpg",
+        "blogTitle":"How Should I Start to learn web development",
+        "coverImgUrl":"https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "readTime": 7,
+        "publishDate":"dec 21 (15 days ago)",
+        "tagOne":"# Learning Start Zero",
+        "tagTwo":"# Development Learning Way"
+    },
+    {
+        "id":"003",
+        "authorName":"MD.Shahajad Hasan",
+        "authorImgUrl":"https://www.csofttech.com/wp-content/uploads/2017/01/hire-developer-professional-man.jpg",
+        "blogTitle":"How to learn Web Development Using Free Resources",
+        "coverImgUrl":"https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "readTime": 18,
+        "publishDate":"jun 20 (30 days ago)",
+        "tagOne":"#Resources",
+        "tagTwo":"#web Free resources"
+    },
+    {
+        "id":"004",
+        "authorName":"MD.Khirul Basar",
+        "authorImgUrl":"https://t4.ftcdn.net/jpg/03/69/19/81/360_F_369198116_K0sFy2gRTo1lmIf5jVGeQmaIEibjC3NN.jpg",
+        "blogTitle":"How you can learn development from YouTube",
+        "coverImgUrl":"https://images.pexels.com/photos/5473298/pexels-photo-5473298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "readTime": 10 ,
+        "publishDate":"feb 23 (09 days ago)",
+        "tagOne":"#Channel",
+        "tagTwo":"#youtube learning"
+    }
+]
