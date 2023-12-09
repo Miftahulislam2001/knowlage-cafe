@@ -2,10 +2,10 @@
 import { FaBookmark } from "react-icons/fa";
 
 const Card = (props) => {
-    console.log(props.blog);
-    const {
-        authorName, authorImgUrl, coverImgUrl, publishDate, readTime, blogTitle, tagOne, tagTwo,
-    } = props.blog;
+    const addToBookmark = props.addToBookmark;
+    const countReadingTime = props.countReadingTime;
+    const {authorName, authorImgUrl, coverImgUrl, publishDate, readTime, blogTitle, tagOne, tagTwo} = props.blog;
+    
     return (
         <div>
             <div className="card w-full bg-base-300 shadow-xl my-5">
@@ -28,7 +28,10 @@ const Card = (props) => {
                         <div className="flex flex-row gap-3">
                             <p>{readTime} Min Read</p>
                             <button>
-                                <FaBookmark className='text-2xl'></FaBookmark>
+                                <FaBookmark className='text-2xl'
+                                    on
+                                onClick={()=>addToBookmark(blogTitle)}
+                                ></FaBookmark>
                             </button>
                         </div>
                     </div>
@@ -38,6 +41,7 @@ const Card = (props) => {
                         <p>{tagTwo}</p>
                     </div>
                     <button
+                    onClick={()=>countReadingTime(blog)}
 
                         className="underline mr-auto block text-[#6047EC] mt-[27px]"
                     >
