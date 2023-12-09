@@ -6,10 +6,12 @@ import Card from '../Card/Card';
 const Blog = (blog) => {
     const [blogs, setBlogs] = useState([]);
 
+    // Reading Time Function ...
     const countReadingTime = (blog) =>{
         console.log(blog);
     }
-
+    
+    // Add Bookmarks Function...
     const addToBookmark = (title) =>{
         console.log(title);
     }
