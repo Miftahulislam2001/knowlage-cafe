@@ -8,15 +8,19 @@ import SideCard from './components/SideCard/SideCard';
 
 const App = () => {
   const [readingTime, setReadingTime] = useState(0)
+  const [bookmarkedItem, setBookmarkedItem] = useState([])
+
+
+
 
   return (
     <div className='max-w-7xl mx-auto'>
       <Header></Header>
       <main className='md:grid md:grid-cols-3'>
 
-      <Blog ></Blog>
+      <Blog readingTime={readingTime} setReadingTime = {setReadingTime} bookmarkedItem = {bookmarkedItem} setBookmarkedItem = {setBookmarkedItem}></Blog>
       <span className='relative'>
-      <SideCard></SideCard>
+      <SideCard readingTime = {readingTime} bookmarkedItem = {bookmarkedItem}></SideCard>
 
       </span>
 

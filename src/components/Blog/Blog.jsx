@@ -3,17 +3,32 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import Card from '../Card/Card';
 
-const Blog = (blog) => {
+const Blog = (props) => {
+
+    const readingTime = props.readingTime;
+    const setReadingTime = props.setReadingTime;
+    const bookmarkedItem = props.bookmarkedItem;
+    const setBookmarkedItem = props.setBookmarkedItem;
     const [blogs, setBlogs] = useState([]);
+
 
     // Reading Time Function ...
     const countReadingTime = (blog) =>{
-        console.log(blog);
+        const time = readingTime + blog.readTime;
+        setReadingTime(time)
     }
-    
+
     // Add Bookmarks Function...
     const addToBookmark = (title) =>{
-        console.log(title);
+        const previous = [...bookmarkedItem]
+        if(previous.includes(title)){
+            alert('You Have Already Bookmarked this item')
+        }
+        else{
+
+            const newBookmarked = [...bookmarkedItem, title]
+            setBookmarkedItem(newBookmarked)
+        }
     }
 
     useEffect(() => {

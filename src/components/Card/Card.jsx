@@ -5,7 +5,7 @@ const Card = (props) => {
     const addToBookmark = props.addToBookmark;
     const countReadingTime = props.countReadingTime;
     const {authorName, authorImgUrl, coverImgUrl, publishDate, readTime, blogTitle, tagOne, tagTwo} = props.blog;
-    
+
     return (
         <div>
             <div className="card w-full bg-base-300 shadow-xl my-5">
@@ -41,7 +41,7 @@ const Card = (props) => {
                         <p>{tagTwo}</p>
                     </div>
                     <button
-                    onClick={()=>countReadingTime(blog)}
+                    onClick={()=>countReadingTime(props.blog)}
 
                         className="underline mr-auto block text-[#6047EC] mt-[27px]"
                     >
